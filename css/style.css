@@ -60,25 +60,61 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.button rect {
-  fill: #039cdb;
+.button g .st2,
+.button g .st7,
+.button g .st8,
+.button g .st9,
+.button g .st10,
+.button g .st11,
+.button g .st12,
+.button g .st13,
+.button g .st14,
+.button g .st15,
+.button g .st16 {
+  display: block;
+  opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.button text {
-  fill: white;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.button g .st2 text tspan,
+.button g .st7 text tspan,
+.button g .st8 text tspan,
+.button g .st9 text tspan,
+.button g .st10 text tspan,
+.button g .st11 text tspan,
+.button g .st12 text tspan,
+.button g .st13 text tspan,
+.button g .st14 text tspan,
+.button g .st15 text tspan,
+.button g .st16 text tspan {
   font-family: "Titillium Web";
+  font-weight: 600;
 }
 
-.button:hover rect {
+.button g use {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   fill: white;
+  fill-opacity: 0;
 }
 
-.button:hover text {
-  fill: #039cdb;
+.button:hover g .st2,
+.button:hover g .st7,
+.button:hover g .st8,
+.button:hover g .st9,
+.button:hover g .st10,
+.button:hover g .st11,
+.button:hover g .st12,
+.button:hover g .st13,
+.button:hover g .st14,
+.button:hover g .st15,
+.button:hover g .st16 {
+  opacity: 1;
+}
+
+.button:hover g use {
+  fill-opacity: 1;
 }
 
 @-webkit-keyframes animate {

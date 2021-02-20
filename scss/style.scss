@@ -50,21 +50,56 @@ body {
 
 .button {
   cursor: pointer;
-  rect {
-    fill: #039cdb;
-    transition: all 0.3s ease;
-  }
-  text {
-    fill: white;
-    transition: all 0.3s ease;
-    font-family: "Titillium Web";
-  }
-  &:hover {
-    rect {
-      fill: white;
+
+  g {
+    .st2,
+    .st7,
+    .st8,
+    .st9,
+    .st10,
+    .st11,
+    .st12,
+    .st13,
+    .st14,
+    .st15,
+    .st16 {
+      display: block;
+      opacity: 0;
+      transition: all 0.3s ease;
+      text {
+        tspan {
+          font-family: "Titillium Web";
+          font-weight: 600;
+        }
+      }
     }
-    text {
-      fill: #039cdb;
+
+    use {
+      transition: all 0.3s ease;
+      fill: white;
+      fill-opacity: 0;
+    }
+  }
+
+  &:hover {
+    g {
+      .st2,
+      .st7,
+      .st8,
+      .st9,
+      .st10,
+      .st11,
+      .st12,
+      .st13,
+      .st14,
+      .st15,
+      .st16 {
+        opacity: 1;
+      }
+
+      use {
+        fill-opacity: 1;
+      }
     }
   }
 }
