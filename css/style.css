@@ -29,6 +29,29 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 
+.container #Layer_1 {
+  position: absolute;
+  bottom: 0;
+}
+
+.container .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.container .clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  -webkit-animation: animate calc(5s * var(--i)) linear infinite;
+          animation: animate calc(5s * var(--i)) linear infinite;
+}
+
 .container #large-1 {
   position: absolute;
   top: 0;
@@ -599,29 +622,6 @@ body::-webkit-scrollbar {
   }
 }
 
-.container #Layer_1 {
-  position: absolute;
-  bottom: 0;
-}
-
-.container .clouds {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.container .clouds img {
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-  -webkit-animation: animate calc(5s * var(--i)) linear infinite;
-          animation: animate calc(5s * var(--i)) linear infinite;
-}
-
 .section {
   width: 100%;
   height: 100vh;
@@ -630,6 +630,66 @@ body::-webkit-scrollbar {
 
 .button {
   cursor: pointer;
+  opacity: 0;
+  -webkit-animation: fade 0.5s linear;
+          animation: fade 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.button:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.button:nth-child(4) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.button:nth-child(5) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.button:nth-child(6) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.button:nth-child(7) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.button:nth-child(8) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.button:nth-child(9) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.button:nth-child(10) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.button:nth-child(11) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.button:nth-child(12) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.button:nth-child(13) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .button g .st2,
@@ -687,6 +747,33 @@ body::-webkit-scrollbar {
 
 .button:hover g use {
   fill-opacity: 1;
+}
+
+#land_cruiser {
+  cursor: pointer;
+  opacity: 0;
+  -webkit-animation: fade 1s linear;
+          animation: fade 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes animate {
