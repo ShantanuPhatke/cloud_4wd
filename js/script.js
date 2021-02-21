@@ -1,6 +1,6 @@
 (function() {
     // Add event listener
-    document.addEventListener("mousemove", parallax);
+    document.querySelector(".container").addEventListener("mousemove", parallax);
     const elem1 = document.querySelector("#_x31_1");
     const elem2 = document.querySelector("#_x31_0");
     const elem3 = document.querySelector("#_x30_9");

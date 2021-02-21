@@ -14,7 +14,7 @@ body {
 .container {
   position: relative;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 45%;
   background: #039cdb;
   display: flex;
   justify-content: center;
@@ -421,7 +421,7 @@ body {
 .section {
   width: 100%;
   height: 100vh;
-  background: white;
+  background: #039cdb;
 }
 
 .button {
@@ -502,6 +502,7 @@ body {
 
 #land_cruiser {
   cursor: pointer;
+  pointer-events: none;
   opacity: 0;
   animation: fade 1s linear;
   animation-fill-mode: forwards;
