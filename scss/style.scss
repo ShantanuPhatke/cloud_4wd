@@ -19,6 +19,381 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+
+  // Background text animation
+
+  #large-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    animation: panLarge1 110s linear 0s infinite;
+
+    span {
+      font-size: 30px;
+      color: #d3d3d3;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  #large-2 {
+    position: absolute;
+    top: 0;
+    left: -305%;
+    width: 300%;
+    height: 100%;
+    animation: panLarge2 110s linear 0s infinite;
+
+    span {
+      font-size: 30px;
+      color: #d3d3d3;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  #large-3 {
+    position: absolute;
+    top: 0;
+    left: -305%;
+    width: 300%;
+    height: 100%;
+    animation: panLarge3 110s linear 0s infinite;
+
+    span {
+      font-size: 30px;
+      color: #d3d3d3;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  @keyframes panLarge1 {
+    0% {
+      left: -300%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panLarge2 {
+    0% {
+      left: -305%;
+    }
+    28% {
+      left: -305%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panLarge3 {
+    0% {
+      left: -305%;
+    }
+    61% {
+      left: -305%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  #medium-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    animation: panMedium1 90s linear 0s infinite;
+
+    span {
+      font-size: 18px;
+      color: #e2e2e2;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  #medium-2 {
+    position: absolute;
+    top: 0;
+    left: -305%;
+    width: 300%;
+    height: 100%;
+    animation: panMedium2 90s linear 0s infinite;
+
+    span {
+      font-size: 18px;
+      color: #e2e2e2;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  #medium-3 {
+    position: absolute;
+    top: 0;
+    left: -305%;
+    width: 300%;
+    height: 100%;
+    animation: panMedium3 90s linear 0s infinite;
+
+    span {
+      font-size: 18px;
+      color: #e2e2e2;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  @keyframes panMedium1 {
+    0% {
+      left: -300%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panMedium2 {
+    0% {
+      left: -305%;
+    }
+    28% {
+      left: -305%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panMedium3 {
+    0% {
+      left: -305%;
+    }
+    61% {
+      left: -305%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  #small-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    animation: panSmall1 70s linear 0s infinite;
+
+    span {
+      font-size: 14px;
+      color: #f1f1f1;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  #small-2 {
+    position: absolute;
+    top: 0;
+    left: -305%;
+    width: 300%;
+    height: 100%;
+    animation: panSmall2 70s linear 0s infinite;
+
+    span {
+      font-size: 14px;
+      color: #f1f1f1;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  #small-3 {
+    position: absolute;
+    top: 0;
+    left: -305%;
+    width: 300%;
+    height: 100%;
+    animation: panSmall3 70s linear 0s infinite;
+
+    span {
+      font-size: 14px;
+      color: #f1f1f1;
+      position: absolute;
+      visibility: visible;
+      white-space: pre;
+    }
+  }
+
+  @keyframes panSmall1 {
+    0% {
+      left: -300%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panSmall2 {
+    0% {
+      left: -305%;
+    }
+    28% {
+      left: -305%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panSmall3 {
+    0% {
+      left: -305%;
+    }
+    61% {
+      left: -305%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    #large-1 span {
+      font-size: 20px;
+    }
+    #large-2 span {
+      font-size: 20px;
+    }
+    #large-3 span {
+      font-size: 20px;
+    }
+
+    #medium-1 span {
+      font-size: 15px;
+    }
+    #medium-2 span {
+      font-size: 15px;
+    }
+    #medium-3 span {
+      font-size: 15px;
+    }
+
+    #small-1 span {
+      font-size: 12px;
+    }
+    #small-2 span {
+      font-size: 12px;
+    }
+    #small-3 span {
+      font-size: 12px;
+    }
+
+    @keyframes panLarge1 {
+      0% {
+        left: -300%;
+      }
+      33% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    @keyframes panLarge2 {
+      0% {
+        left: -330%;
+      }
+      28% {
+        left: -330%;
+      }
+      66% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    @keyframes panLarge3 {
+      0% {
+        left: -330%;
+      }
+      61% {
+        left: -330%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    @keyframes panMedium1 {
+      0% {
+        left: -320%;
+      }
+      33% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    @keyframes panMedium2 {
+      0% {
+        left: -320%;
+      }
+      28% {
+        left: -320%;
+      }
+      66% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    @keyframes panMedium3 {
+      0% {
+        left: -320%;
+      }
+      61% {
+        left: -320%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  }
+
+  // Background text animation
 
   #Layer_1 {
     position: absolute;

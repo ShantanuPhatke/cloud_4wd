@@ -26,6 +26,577 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+}
+
+.container #large-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panLarge1 110s linear 0s infinite;
+          animation: panLarge1 110s linear 0s infinite;
+}
+
+.container #large-1 span {
+  font-size: 30px;
+  color: #d3d3d3;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+.container #large-2 {
+  position: absolute;
+  top: 0;
+  left: -305%;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panLarge2 110s linear 0s infinite;
+          animation: panLarge2 110s linear 0s infinite;
+}
+
+.container #large-2 span {
+  font-size: 30px;
+  color: #d3d3d3;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+.container #large-3 {
+  position: absolute;
+  top: 0;
+  left: -305%;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panLarge3 110s linear 0s infinite;
+          animation: panLarge3 110s linear 0s infinite;
+}
+
+.container #large-3 span {
+  font-size: 30px;
+  color: #d3d3d3;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+@-webkit-keyframes panLarge1 {
+  0% {
+    left: -300%;
+  }
+  33% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panLarge1 {
+  0% {
+    left: -300%;
+  }
+  33% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes panLarge2 {
+  0% {
+    left: -305%;
+  }
+  28% {
+    left: -305%;
+  }
+  66% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panLarge2 {
+  0% {
+    left: -305%;
+  }
+  28% {
+    left: -305%;
+  }
+  66% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes panLarge3 {
+  0% {
+    left: -305%;
+  }
+  61% {
+    left: -305%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panLarge3 {
+  0% {
+    left: -305%;
+  }
+  61% {
+    left: -305%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.container #medium-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panMedium1 90s linear 0s infinite;
+          animation: panMedium1 90s linear 0s infinite;
+}
+
+.container #medium-1 span {
+  font-size: 18px;
+  color: #e2e2e2;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+.container #medium-2 {
+  position: absolute;
+  top: 0;
+  left: -305%;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panMedium2 90s linear 0s infinite;
+          animation: panMedium2 90s linear 0s infinite;
+}
+
+.container #medium-2 span {
+  font-size: 18px;
+  color: #e2e2e2;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+.container #medium-3 {
+  position: absolute;
+  top: 0;
+  left: -305%;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panMedium3 90s linear 0s infinite;
+          animation: panMedium3 90s linear 0s infinite;
+}
+
+.container #medium-3 span {
+  font-size: 18px;
+  color: #e2e2e2;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+@-webkit-keyframes panMedium1 {
+  0% {
+    left: -300%;
+  }
+  33% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panMedium1 {
+  0% {
+    left: -300%;
+  }
+  33% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes panMedium2 {
+  0% {
+    left: -305%;
+  }
+  28% {
+    left: -305%;
+  }
+  66% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panMedium2 {
+  0% {
+    left: -305%;
+  }
+  28% {
+    left: -305%;
+  }
+  66% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes panMedium3 {
+  0% {
+    left: -305%;
+  }
+  61% {
+    left: -305%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panMedium3 {
+  0% {
+    left: -305%;
+  }
+  61% {
+    left: -305%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.container #small-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panSmall1 70s linear 0s infinite;
+          animation: panSmall1 70s linear 0s infinite;
+}
+
+.container #small-1 span {
+  font-size: 14px;
+  color: #f1f1f1;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+.container #small-2 {
+  position: absolute;
+  top: 0;
+  left: -305%;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panSmall2 70s linear 0s infinite;
+          animation: panSmall2 70s linear 0s infinite;
+}
+
+.container #small-2 span {
+  font-size: 14px;
+  color: #f1f1f1;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+.container #small-3 {
+  position: absolute;
+  top: 0;
+  left: -305%;
+  width: 300%;
+  height: 100%;
+  -webkit-animation: panSmall3 70s linear 0s infinite;
+          animation: panSmall3 70s linear 0s infinite;
+}
+
+.container #small-3 span {
+  font-size: 14px;
+  color: #f1f1f1;
+  position: absolute;
+  visibility: visible;
+  white-space: pre;
+}
+
+@-webkit-keyframes panSmall1 {
+  0% {
+    left: -300%;
+  }
+  33% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panSmall1 {
+  0% {
+    left: -300%;
+  }
+  33% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes panSmall2 {
+  0% {
+    left: -305%;
+  }
+  28% {
+    left: -305%;
+  }
+  66% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panSmall2 {
+  0% {
+    left: -305%;
+  }
+  28% {
+    left: -305%;
+  }
+  66% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes panSmall3 {
+  0% {
+    left: -305%;
+  }
+  61% {
+    left: -305%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes panSmall3 {
+  0% {
+    left: -305%;
+  }
+  61% {
+    left: -305%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container #large-1 span {
+    font-size: 20px;
+  }
+  .container #large-2 span {
+    font-size: 20px;
+  }
+  .container #large-3 span {
+    font-size: 20px;
+  }
+  .container #medium-1 span {
+    font-size: 15px;
+  }
+  .container #medium-2 span {
+    font-size: 15px;
+  }
+  .container #medium-3 span {
+    font-size: 15px;
+  }
+  .container #small-1 span {
+    font-size: 12px;
+  }
+  .container #small-2 span {
+    font-size: 12px;
+  }
+  .container #small-3 span {
+    font-size: 12px;
+  }
+  @-webkit-keyframes panLarge1 {
+    0% {
+      left: -300%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panLarge1 {
+    0% {
+      left: -300%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes panLarge2 {
+    0% {
+      left: -330%;
+    }
+    28% {
+      left: -330%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panLarge2 {
+    0% {
+      left: -330%;
+    }
+    28% {
+      left: -330%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes panLarge3 {
+    0% {
+      left: -330%;
+    }
+    61% {
+      left: -330%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panLarge3 {
+    0% {
+      left: -330%;
+    }
+    61% {
+      left: -330%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes panMedium1 {
+    0% {
+      left: -320%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panMedium1 {
+    0% {
+      left: -320%;
+    }
+    33% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes panMedium2 {
+    0% {
+      left: -320%;
+    }
+    28% {
+      left: -320%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panMedium2 {
+    0% {
+      left: -320%;
+    }
+    28% {
+      left: -320%;
+    }
+    66% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes panMedium3 {
+    0% {
+      left: -320%;
+    }
+    61% {
+      left: -320%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes panMedium3 {
+    0% {
+      left: -320%;
+    }
+    61% {
+      left: -320%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
 }
 
 .container #Layer_1 {
