@@ -21,11 +21,13 @@ body {
   align-items: center;
   overflow: hidden;
 
+  // Svg
   #Layer_1 {
     position: absolute;
     bottom: 0;
   }
 
+  // Gradient patch
   .patch {
     position: absolute;
     bottom: 0;
@@ -39,6 +41,7 @@ body {
     );
   }
 
+  // cloud elements
   .clouds {
     position: absolute;
     bottom: -60px;
@@ -55,6 +58,7 @@ body {
     }
   }
 
+  // Cloud animation
   @keyframes animate {
     0% {
       opacity: 0;
@@ -445,6 +449,7 @@ body {
   // Background text animation
 }
 
+// Extra section for demo
 .section {
   width: 100%;
   height: 100vh;
@@ -452,12 +457,14 @@ body {
   background: white;
 }
 
+// Elements from svg used for category button
 .button {
   cursor: pointer;
   opacity: 0;
   animation: fade 0.5s linear;
   animation-fill-mode: forwards;
 
+  // Dynamic animation delay for all buttons
   $delay: 0.2;
   $currentDelay: 1;
   @for $i from 3 through 13 {
@@ -467,14 +474,7 @@ body {
     }
   }
 
-  // $buttonCount: 11;
-  // @for $i from 1 through 11 {
-  //   &:nth-child(#{$i}) {
-  //     animation-delay: -#{$buttonCount}px;
-  //     $var: $var + 5;
-  //   }
-  // }
-
+  // Circle element of button
   g {
     .st2,
     .st7,
@@ -528,6 +528,7 @@ body {
   }
 }
 
+// Hero image
 #land_cruiser {
   cursor: pointer;
   pointer-events: none;
@@ -536,6 +537,7 @@ body {
   animation-fill-mode: forwards;
 }
 
+// Fade animation
 @keyframes fade {
   0% {
     opacity: 0;
