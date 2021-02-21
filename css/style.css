@@ -14,9 +14,9 @@ body::-webkit-scrollbar {
 
 .container {
   position: relative;
-  background: #039cdb;
   width: 100%;
-  height: 100vh;
+  padding-top: 50%;
+  background: #039cdb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,7 @@ body::-webkit-scrollbar {
 .section {
   width: 100%;
   height: 100vh;
+  background: white;
 }
 
 .button {
