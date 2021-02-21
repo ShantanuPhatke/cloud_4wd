@@ -25,7 +25,6 @@
         let _depth4 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.004}%`;
         let _depth5 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.005}%`;
         let x = `${_depth1}`;
-        console.log(x);
         elem1.style.transform = `translate(${_depth2})`;
         elem2.style.transform = `translate(${_depth3})`;
         elem3.style.transform = `translate(${_depth4})`;
