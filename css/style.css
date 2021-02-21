@@ -34,13 +34,22 @@ body::-webkit-scrollbar {
   bottom: 0;
 }
 
+.container .patch {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(3, 156, 219, 0)));
+  background: linear-gradient(0deg, white 0%, rgba(3, 156, 219, 0) 100%);
+}
+
 .container .clouds {
   position: absolute;
-  top: 0;
+  bottom: -60px;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   pointer-events: none;
 }
 
@@ -50,6 +59,40 @@ body::-webkit-scrollbar {
   max-width: 100%;
   -webkit-animation: animate calc(5s * var(--i)) linear infinite;
           animation: animate calc(5s * var(--i)) linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
 }
 
 .container #large-1 {
@@ -625,7 +668,7 @@ body::-webkit-scrollbar {
 .section {
   width: 100%;
   height: 100vh;
-  background: #039cdb;
+  background: white;
 }
 
 .button {
@@ -774,40 +817,6 @@ body::-webkit-scrollbar {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes animate {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25%,
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-            transform: scale(3);
-  }
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25%,
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-            transform: scale(3);
   }
 }
 /*# sourceMappingURL=style.css.map */
