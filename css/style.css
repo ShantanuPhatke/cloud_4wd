@@ -678,6 +678,8 @@ body::-webkit-scrollbar {
           animation: fade 0.5s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .button:nth-child(3) {

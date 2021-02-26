@@ -2,6 +2,7 @@
     // Add event listener
     document.querySelector("#container_4wd").addEventListener("mousemove", parallax);
     document.querySelector("#container_4wd").addEventListener("mouseleave", resetParallax);
+
     const elem1 = document.querySelector("#_x31_1");
     const elem2 = document.querySelector("#_x31_0");
     const elem3 = document.querySelector("#_x30_9");
@@ -14,6 +15,7 @@
     const elem10 = document.querySelector("#_x30_2");
     const elem11 = document.querySelector("#_x30_1");
     const elem12 = document.querySelector("#land_cruiser");
+
     // Parallax function
     function parallax(e) {
         let _w = window.innerWidth/2;
@@ -25,6 +27,7 @@
         let _depth3 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.003}%`;
         let _depth4 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.004}%`;
         let _depth5 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.005}%`;
+
         elem1.style.transform = `translate(${_depth2})`;
         elem2.style.transform = `translate(${_depth3})`;
         elem3.style.transform = `translate(${_depth4})`;
