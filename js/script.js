@@ -1,6 +1,7 @@
 (function() {
     // Add event listener
     document.querySelector(".container").addEventListener("mousemove", parallax);
+    document.querySelector(".container").addEventListener("mouseleave", resetParallax);
     const elem1 = document.querySelector("#_x31_1");
     const elem2 = document.querySelector("#_x31_0");
     const elem3 = document.querySelector("#_x30_9");
@@ -13,7 +14,7 @@
     const elem10 = document.querySelector("#_x30_2");
     const elem11 = document.querySelector("#_x30_1");
     const elem12 = document.querySelector("#land_cruiser");
-    // Magic happens here
+    // Parallax function
     function parallax(e) {
         let _w = window.innerWidth/2;
         let _h = window.innerHeight/2;
@@ -24,7 +25,6 @@
         let _depth3 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.003}%`;
         let _depth4 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.004}%`;
         let _depth5 = `${ - (_mouseX - _w) * 0.003}%, ${ - (_mouseY - _h) * 0.005}%`;
-        let x = `${_depth1}`;
         elem1.style.transform = `translate(${_depth2})`;
         elem2.style.transform = `translate(${_depth3})`;
         elem3.style.transform = `translate(${_depth4})`;
@@ -37,6 +37,22 @@
         elem10.style.transform = `translate(${_depth3})`;
         elem11.style.transform = `translate(${_depth4})`;
         elem12.style.transform = `translate(${_depth1})`;
+    }
+
+    // Re-initializes to original position
+    function resetParallax(e) {
+        elem1.style.transform = `translate(0,0)`;
+        elem2.style.transform = `translate(0,0)`;
+        elem3.style.transform = `translate(0,0)`;
+        elem4.style.transform = `translate(0,0)`;
+        elem5.style.transform = `translate(0,0)`;
+        elem6.style.transform = `translate(0,0)`;
+        elem7.style.transform = `translate(0,0)`;
+        elem8.style.transform = `translate(0,0)`;
+        elem9.style.transform = `translate(0,0)`;
+        elem10.style.transform = `translate(0,0)`;
+        elem11.style.transform = `translate(0,0)`;
+        elem12.style.transform = `translate(0,0)`;
     }
 
 })();
